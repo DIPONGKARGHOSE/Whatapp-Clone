@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Course evaluation</string>
+    <string name="action_settings">Settings</string>
+    //teacher dashboard
+    <string name="logout_txt">logout</string>
+    <string name="course_name_txt">Course name</string>
+    <string name="student_id_txt">Student ID</string>
+    <string name="new_password_txt">New password</string>
+    <string name="confirm_new_password_txt">Confirm new password</string>
+    <string name="register_txt">Register</string>
+    <string name="full_name_txt">Full Name</string>
+    <string name="email_txt">Email</string>
+    <string name="contact_no_txt">Contact no</string>
+    <string name="registration_caps_txt">REGISTRATION</string>
+    <string name="student_txt">Student</string>
+    <string name="teacher_txt">Teacher</string>
+    <string name="department_txt">Department</string>
+    <string name="designation_txt">Designation</string>
+    <string name="already_have_account_txt">Already Have Account?</string>
+    <string name="login_txt">Login</string>
+    <string name="profile_txt">profile</string>
+    <string name="name_txt">Name</string>
+    <string name="dummy_semester_txt">Spring 2019</string>
+    <string name="dummy_text">this is  a dummy text however you do any eork you can dio itasdhbauhbd</string>
+    <string name="sample_name">Md Ashraful Alam</string>
+
+
+    <string name="image_tag">133</string>
+    //end
+    //tableview
+    <string name="sort_ascending">Sort Ascending</string>
+    <string name="sort_descending">Sort Descending</string>
+    <string name="hiding_row_sample">Hiding 3. Row Sample</string>
+    <string name="showing_row_sample">Showing 3. Row Sample</string>
+    <string name="scroll_to_row_position">Scroll to 5. row position</string>
+    <string name="refresh_txt">Refresh</string>
+    <string name="dummy_mail">david91@gmail.com</string>
+    <string name="fileproviderpath">com.example.course_evaluation.fileprovider</string>
+
+
+    <string name="tdb_item_ratio" translatable="false">20:12</string>
+    <string name="faculty_txt">Faculty</string>
+    <string name="forgot_password_txt">forgot password ?</string>
+    <string name="not_registered_signup_txt">Not registered ? signup here</string>
+    <string name="whats_on_your_mind">Whats on your mind</string>
+    <string name="transitname">sharedtransitionname</string>
+    <string name="txt_placeholder">░░░░░░░░░░░░░</string>
+    <string name="txt_placeholder_3line">..........................\n  ░░░░░    ▒▒▒▒▒▒..........................................\n.............   .................</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    //end
+</resources>

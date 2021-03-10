@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary" />
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginEnd="-201dp"
+        android:layout_marginRight="-201dp"
+        android:src="@drawable/ic_baseline_person_24" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chatting"
+        android:fontFamily="cursive"
+        android:textSize="60dp"
+/>
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/text"
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="app"
+        android:fontFamily="cursive"
+        android:textSize="80dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/view1"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="20dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text3"
+                android:text="Login"
+                android:textSize="50dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+
+           android:layout_below="@+id/text3"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            android:id="@+id/us">
+        <LinearLayout
+            android:id="@+id/hello"
+
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:layout_width="wrap_content"
+                  android:id="@+id/ccp"
+
+                android:layout_height="wrap_content"
+                app:ccp_contentColor="@android:color/widget_edittext_dark"
+                app:ccp_defaultLanguage="ENGLISH"
+                app:ccp_autoDetectCountry="false"
+                app:ccp_defaultNameCode="sa"/>
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                android:id="@+id/username">
+
+                <EditText
+
+                    android:background="#ffff"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    android:hint="Phone Number"
+                    android:inputType="number" />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple"
+            app:mrl_rippleAlpha=".1"
+            app:mrl_rippleOverlay="true"
+
+            app:mrl_rippleColor="#25C4F3"
+            android:layout_below="@+id/us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="40dp"
+                android:layout_weight="0.2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="sign_in"
+                android:id="@+id/login_button"
+                android:backgroundTint="#116EB8"
+                android:layout_below="@+id/us"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
